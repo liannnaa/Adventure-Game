@@ -11,6 +11,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"down_key","path":"objects/obj_player/obj_player.yy",},"value":"vk_down",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"hb_x","path":"objects/obj_player/obj_player.yy",},"value":"room_width - 96",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"player","path":"objects/obj_player/obj_player.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"color","path":"objects/obj_player/obj_player.yy",},"value":"$A000FFD4",},
   ],
   "parent": {
     "name": "Objects",

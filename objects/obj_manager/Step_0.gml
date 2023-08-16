@@ -48,3 +48,11 @@ if(obj_time_manager.current_phase == "night"){
 		frames_since_lightning = 0
 	}
 }
+
+if(collected){
+	frames_since_chance += 1
+	if(frames_since_chance > max_chance){
+		collected = false
+	}
+}
+	

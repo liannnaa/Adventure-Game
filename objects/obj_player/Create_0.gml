@@ -45,3 +45,18 @@ block = create_particle_system(pt_shape_smoke,
 								speed_min, speed_max, speed_incr, speed_wiggle,
 								direction_min, direction_max, direction_incr, direction_wiggle,
 								c_gray, life_min, life_max)
+								
+part_system = part_system_create();
+part_type = part_type_create();
+part_type_shape(part_type, pt_shape_sphere);
+part_type_size(part_type, 0.1, .1, 0, 0);
+part_type_alpha2(part_type, 1, 0);
+part_type_speed(part_type, 0.1, 0.1, 0, 0);
+part_type_direction(part_type, 0, 0, 0, 0);
+part_type_orientation(part_type, 0, 360, 0, 0, 1);
+part_type_life(part_type, 60, 120);
+
+part_type_color2(part_type, color, color);
+
+emit_counter = 0;
+emit_frequency = 2;

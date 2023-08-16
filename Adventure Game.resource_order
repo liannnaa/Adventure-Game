@@ -46,6 +46,7 @@
     {"name":"obj_p1","order":3,"path":"objects/obj_p1/obj_p1.yy",},
     {"name":"obj_rain","order":11,"path":"objects/obj_rain/obj_rain.yy",},
     {"name":"snd_die","order":3,"path":"sounds/snd_die/snd_die.yy",},
+    {"name":"ParticleSystem2","order":1,"path":"particles/ParticleSystem2/ParticleSystem2.yy",},
     {"name":"obj_text","order":8,"path":"objects/obj_text/obj_text.yy",},
     {"name":"obj_time_manager","order":10,"path":"objects/obj_time_manager/obj_time_manager.yy",},
     {"name":"spr_sky","order":5,"path":"sprites/spr_sky/spr_sky.yy",},

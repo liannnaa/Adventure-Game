@@ -70,6 +70,7 @@
     {"id":{"name":"scr_create_particle_system","path":"scripts/scr_create_particle_system/scr_create_particle_system.yy",},},
     {"id":{"name":"obj_rain","path":"objects/obj_rain/obj_rain.yy",},},
     {"id":{"name":"snd_die","path":"sounds/snd_die/snd_die.yy",},},
+    {"id":{"name":"ParticleSystem2","path":"particles/ParticleSystem2/ParticleSystem2.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"obj_time_manager","path":"objects/obj_time_manager/obj_time_manager.yy",},},
     {"id":{"name":"ps_rain","path":"particles/ps_rain/ps_rain.yy",},},
