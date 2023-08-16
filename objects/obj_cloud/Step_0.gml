@@ -12,8 +12,6 @@ if(level < 4){
 	
 		level += 1
 		cloud_timer = 0
-		
-		x = clamp(x, sprite_width / 2, room_width - sprite_width / 2);
 	}
 }
 
@@ -23,8 +21,8 @@ switch (cloud_type) {
         break;
     case 1:  // Moving cloud
         image_index = 1
-        if (x - sprite_width / 2 <= 0 || x + sprite_width / 2 >= room_width) {
-            moving_dir *= -1;  // Reverse direction
+        if (x + sprite_width <= 0 || x >= room_width) {
+            instance_destroy(self)
         } else {
             moving_change_timer += 1;
             if (moving_change_timer >= moving_change_frequency) {
