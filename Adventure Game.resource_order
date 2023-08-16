@@ -50,7 +50,6 @@
     {"name":"obj_text","order":8,"path":"objects/obj_text/obj_text.yy",},
     {"name":"obj_time_manager","order":10,"path":"objects/obj_time_manager/obj_time_manager.yy",},
     {"name":"spr_sky","order":5,"path":"sprites/spr_sky/spr_sky.yy",},
-    {"name":"scr_handle_collisions","order":1,"path":"scripts/scr_handle_collisions/scr_handle_collisions.yy",},
     {"name":"snd_win","order":8,"path":"sounds/snd_win/snd_win.yy",},
   ],
 }

@@ -75,7 +75,6 @@
     {"id":{"name":"obj_time_manager","path":"objects/obj_time_manager/obj_time_manager.yy",},},
     {"id":{"name":"ps_rain","path":"particles/ps_rain/ps_rain.yy",},},
     {"id":{"name":"spr_sky","path":"sprites/spr_sky/spr_sky.yy",},},
-    {"id":{"name":"scr_handle_collisions","path":"scripts/scr_handle_collisions/scr_handle_collisions.yy",},},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],

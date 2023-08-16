@@ -133,6 +133,8 @@ while(_to_move_y != 0) {
 				if(_collide_with != noone){
 					points -= 1
 					instance_destroy(_collide_with)
+					obj_camera.shake_duration = 15
+					obj_camera.shake_intensity = 10
 					audio_play_sound(snd_crack, 1, false)
 					image_index = 6
 					part_particles_create(parts, x, y, spark, 20)
