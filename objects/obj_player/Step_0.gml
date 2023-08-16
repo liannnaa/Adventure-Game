@@ -232,3 +232,7 @@ if (abs(x_vel) > 0 || abs(y_vel) > 0) {
         emit_counter = 0;
     }
 }
+
+if(points <= 3){
+	pulse_timer += pulse_frequency
+}

@@ -1,6 +1,11 @@
 // juice
 shake_screen = 5
 
+pulse_frequency = 0.1
+pulse_amplitude = 0.5 
+pulse_timer = 0
+
+
 // particle settings
 parts = part_system_create()
 part_system_depth(parts, 30)
