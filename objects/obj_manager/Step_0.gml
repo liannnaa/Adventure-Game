@@ -36,13 +36,15 @@ if(num_items < max_items){
 }
 
 // lightning generator
-frames_since_lightning += 1
-if(frames_since_lightning > max_lightning){
-	var spawn = irandom(chance_lightning)
+if(obj_time_manager.current_phase == "night"){
+	frames_since_lightning += 1
+	if(frames_since_lightning > max_lightning){
+		var spawn = irandom(chance_lightning)
 	
-	if(spawn == 1){
-		instance_create_depth(random_range(30, room_width - 30), 0, -999, obj_lightning)
+		if(spawn == 1){
+			instance_create_depth(random_range(30, room_width - 30), 0, -999, obj_lightning)
+		}
+	
+		frames_since_lightning = 0
 	}
-	
-	frames_since_lightning = 0
 }

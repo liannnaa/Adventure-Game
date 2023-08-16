@@ -1,34 +1,47 @@
+// juice
 shake_screen = 5
 
+// particle settings
 parts = part_system_create()
 part_system_depth(parts, 30)
 
-// lose life
-spark = part_type_create()
+size_min = 0.1
+size_max = 0.2
+size_incr = 0
+size_wiggle = 0
 
-part_type_shape(spark, pt_shape_star)
-part_type_size(spark, 0.1, 0.2, 0, 0)
-part_type_speed(spark, 2, 5, -0.1, 0)
-part_type_direction(spark, 0, 359, 0, 0)
-part_type_color1(spark, c_yellow)
-part_type_life(spark, 15, 30)
 
-// hit cloud
-poof = part_type_create()
+speed_min = 2
+speed_max = 3
+speed_incr = -0.1
+speed_wiggle = 0
 
-part_type_shape(poof, pt_shape_cloud)
-part_type_size(poof, 0.1, 0.2, 0, 0)
-part_type_speed(poof, 2, 3, -0.1, 0)
-part_type_direction(poof, 0, 359, 0, 0)
-part_type_color1(poof, c_white)
-part_type_life(poof, 5, 15)
+direction_min = 0
+direction_max = 359
+direction_incr = 0
+direction_wiggle = 0
 
-// block
-block = part_type_create()
+life_min = 15
+life_max = 30
 
-part_type_shape(block, pt_shape_smoke)
-part_type_size(block, 0.1, 0.2, 0, 0)
-part_type_speed(block, 2, 5, -0.1, 0)
-part_type_direction(block, 0, 359, 0, 0)
-part_type_color1(block, c_gray)
-part_type_life(block, 15, 30)
+// Lose Life
+spark = create_particle_system(pt_shape_star,
+								size_min, size_max, size_incr, size_wiggle,
+								speed_min, speed_max, speed_incr, speed_wiggle,
+								direction_min, direction_max, direction_incr, direction_wiggle,
+								c_white, life_min, life_max)
+				
+				
+// Hit Cloud
+poof = create_particle_system(pt_shape_cloud,
+								size_min, size_max, size_incr, size_wiggle,
+								speed_min, speed_max, speed_incr, speed_wiggle,
+								direction_min, direction_max, direction_incr, direction_wiggle,
+								c_white, life_min, life_max)
+
+// Block
+block = create_particle_system(pt_shape_smoke,
+								size_min, size_max, size_incr, size_wiggle,
+								speed_min, speed_max, speed_incr, speed_wiggle,
+								direction_min, direction_max, direction_incr, direction_wiggle,
+								c_gray, life_min, life_max)
