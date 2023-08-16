@@ -93,14 +93,18 @@ while(_to_move_y != 0) {
 				if(_collide_with != noone){
 					if(place_meeting(x, y, _collide_with) == false){
 						_colliding = true
-						instance_destroy(_collide_with)
-						audio_play_sound(snd_jump, 1, false)
-						part_particles_create(parts, x, y, poof, 10)
-						if(left){
-							image_index = 3
-						} else {
-							image_index = 0
-						}
+						// Squish and bounce the cloud
+					    _collide_with.image_yscale -= 0.1;  // Squish the cloud vertically
+					    _collide_with.image_xscale += 0.1;  // Stretch the cloud horizontally
+					    // Reset the cloud's scale after a short delay
+					    _collide_with.alarm[0] = 5;
+					    audio_play_sound(snd_jump, 1, false);
+					    part_particles_create(parts, x, y, poof, 10);
+					    if(left){
+					        image_index = 3;
+					    } else {
+					        image_index = 0;
+					    }
 					}
 				}
 			
