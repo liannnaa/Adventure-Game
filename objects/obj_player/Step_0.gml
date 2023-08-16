@@ -201,17 +201,34 @@ if(keyboard_check(down_key) && !left) {
 if(points <= 0) {
     global.loser = player;
     audio_play_sound(snd_jump, 1, false);
-	part_system_destroy(part_system);
+	if(instance_exists(obj_rain)){
+		with(obj_rain){
+			part_system_automatic_draw(self.part_system, false);
+			part_system_clear(self.part_system);
+			instance_destroy(self)
+		}
+	}
+	
+	with(obj_time_manager){
+		alpha = 0;
+		day = 30;
+		night = 30;
+		color = c_black;
+		current_phase = "day";
+		rain = false;
+		alarm[0] = 60;
+	}
+	
     room_goto(rm_end);
 }
 
 emit_counter += 1;
 var _move_dir = point_direction(0, 0, x_vel, y_vel);
 var _emit_dir = _move_dir + 180;
-part_type_direction(part_type, _emit_dir, _emit_dir, 0, 0);
+part_type_direction(trail, _emit_dir, _emit_dir, 0, 0);
 if (abs(x_vel) > 0 || abs(y_vel) > 0) {
     if (emit_counter >= emit_frequency) {
-        part_particles_create(part_system, x, y, part_type, irandom(5));
+        part_particles_create(parts, x, y, trail, irandom(5));
         emit_counter = 0;
     }
 }

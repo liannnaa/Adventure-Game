@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02a98ae0-bc0f-4c55-a45d-65e7e674151c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6848b4c5-ddd5-4ba0-b97a-f8f6862091e9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ceb15ebb-ab0f-41fc-9024-d680b0a8a3cd",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"02a98ae0-bc0f-4c55-a45d-65e7e674151c","path":"sprites/spr_cloud4/spr_cloud4.yy",},},},"Disabled":false,"id":"0e6baf9b-0514-4acf-bd64-c3319f86ba75","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6848b4c5-ddd5-4ba0-b97a-f8f6862091e9","path":"sprites/spr_cloud4/spr_cloud4.yy",},},},"Disabled":false,"id":"eb83d88e-df97-4576-a375-f3f425369cd1","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ceb15ebb-ab0f-41fc-9024-d680b0a8a3cd","path":"sprites/spr_cloud4/spr_cloud4.yy",},},},"Disabled":false,"id":"2d9db990-3e3e-458b-a387-bc173194cf38","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

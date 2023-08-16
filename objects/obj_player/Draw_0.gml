@@ -1,2 +1,2 @@
-part_system_drawit(part_system);
+part_system_drawit(parts);
 draw_self()
