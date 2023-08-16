@@ -4,4 +4,6 @@ if(alpha >= 0){
 } else if (alpha <- 0) {
 	alarm[0] = 60*day
 	current_phase = "day"
+	audio_stop_sound(snd_rain)
+	audio_play_sound(snd_day, 1, true)
 }

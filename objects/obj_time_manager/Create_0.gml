@@ -6,3 +6,5 @@ current_phase = "day"
 rain = false
 
 alarm[0] = 60
+
+audio_play_sound(snd_day, 1, true)
