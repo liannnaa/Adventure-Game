@@ -110,6 +110,8 @@ while(_to_move_y != 0) {
 			
 				_collide_with = instance_place(x, y, obj_item)
 				if(_collide_with != noone){
+					item_collected = true;
+					glow_timer = 60
 					if(_collide_with.type == "shield"){
 						_collide_with.shield = true
 						_collide_with.owner = self
@@ -222,6 +224,10 @@ if(points <= 0) {
 	}
 	
     room_goto(rm_end);
+}
+
+if(glow_timer > 0){
+	glow_timer -=1
 }
 
 emit_counter += 1;
